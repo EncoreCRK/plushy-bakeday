@@ -88,7 +88,7 @@ const SCENES = [
     button: 'Walk deeper'
   },
   {
-    act: 'spire', speaker: 'candy', expression: 'excited', left: 'candy', right: 'blackSapphire',
+    act: 'spire', speaker: 'candy', expression: 'grin', left: 'candy', right: 'blackSapphire',
     text: 'We found a few familiar faces waiting for you, too! Look! They’ve been keeping the secret all day!',
     oc: 'tofu', button: 'Say hello to Brunost!'
   },
