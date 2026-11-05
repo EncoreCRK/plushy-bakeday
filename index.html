@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080d2f">
+  <meta name="description" content="An interactive birthday show for Plushy.">
+  <title>Plushy's Birthday — The Grand Deception</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main id="app" class="app act-prologue">
+    <div class="sky-stars" aria-hidden="true"></div>
+    <header class="topbar">
+      <span class="brand">✦ THE SPIRE THEATRE ✦</span>
+      <div class="controls">
+        <button id="backBtn" class="icon-btn" type="button" aria-label="Previous dialogue" title="Back">←</button>
+        <button id="soundBtn" class="icon-btn" type="button" aria-label="Toggle sound" aria-pressed="true" title="Toggle music">♫</button>
+      </div>
+    </header>
+    <div class="progress-track" aria-hidden="true"><div id="progressBar" class="progress-fill"></div></div>
+    <section class="stage" id="stage" aria-label="Interactive birthday stage">
+      <div id="backdrop" class="backdrop"></div>
+      <div class="stage-header"><span id="actLabel">A PRIVATE PERFORMANCE</span><h1 id="stageTitle">THE GRAND BIRTHDAY DECEPTION</h1></div>
+      <div id="spriteLayer" class="sprite-layer" aria-hidden="true">
+        <div id="spriteLeft" class="sprite-slot slot-left"></div>
+        <div id="spriteCenter" class="sprite-slot slot-center"></div>
+        <div id="spriteRight" class="sprite-slot slot-right"></div>
+      </div>
+      <div id="ocPanel" class="oc-panel hidden" aria-live="polite"></div>
+      <div id="cake" class="cake hidden" role="button" tabindex="0" aria-label="Tap to light the birthday cake candles"><span class="cake-candles">🕯️ 🕯️ 🕯️</span><span class="cake-frosting"></span><span class="cake-layer cake-layer-top"></span><span class="cake-layer cake-layer-bottom"></span><span class="cake-platter"></span></div>
+      <div id="gift" class="gift hidden" role="button" tabindex="0" aria-label="Open birthday present"><span class="gift-lid"></span><span class="gift-bow">✦</span><span class="gift-box"></span><span class="gift-tag">FOR PLUSHY ♡</span></div>
+      <div id="confetti" class="confetti" aria-hidden="true"></div>
+      <div class="floor-light" aria-hidden="true"></div>
+      <div id="curtainLeft" class="curtain curtain-left" aria-hidden="true"></div>
+      <div id="curtainRight" class="curtain curtain-right" aria-hidden="true"></div>
+      <div id="intro" class="intro">
+        <div class="intro-card">
+          <span class="eyebrow">YOU ARE CORDIALLY INVITED</span>
+          <div class="intro-star">✧</div>
+          <h2>A birthday performance<br>for <em id="introName">Plushy</em></h2>
+          <p>One guest. Three deceivers. An unforgettable surprise.</p>
+          <button id="startBtn" class="primary-btn" type="button">ENTER THE THEATRE ✦</button>
+          <small>Tap to begin · music available with sound on</small>
+        </div>
+      </div>
+      <div id="dialogue" class="dialogue hidden" aria-live="polite">
+        <div class="speaker-label" id="speakerName">NARRATOR</div>
+        <div id="bubble" class="bubble" role="button" tabindex="0" aria-label="Advance dialogue"><p id="dialogueText"></p><span class="bubble-hint">TAP TO CONTINUE ◇</span></div>
+        <button id="nextBtn" class="primary-btn next-btn" type="button">CONTINUE ✦</button>
+      </div>
+    </section>
+    <footer class="footer"><span id="stepCounter">✧ A SPECIAL INVITATION ✧</span><span>Made just for you ♡</span></footer>
+    <audio id="musicA" loop preload="none"></audio><audio id="musicB" loop preload="none"></audio>
+  </main>
+</body>
+</html>
