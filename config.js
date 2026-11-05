@@ -80,7 +80,7 @@ const SCENES = [
   },
   {
     act: 'welcome', speaker: 'blackSapphire', expression: 'startled', left: 'blackSapphire', right: 'candy',
-    text: 'Candy Apple, please. We had rehearsed a dignified entrance. Regardless… onward, Plushy. The Spire awaits.',
+    text: 'Candy Apple Cookie, please. We had rehearsed a dignified entrance. Regardless… onward, Plushy. The Spire awaits.',
     button: 'Enter the Spire'
   },
   {
