@@ -98,7 +98,7 @@ const SCENES = [
     oc: 'mold', button: 'Keep going'
   },
   {
-    act: 'cake', speaker: 'candy', expression: 'excited', left: 'grin', right: 'blackSapphire',
+    act: 'cake', speaker: 'candy', expression: 'grin', left: 'candy', right: 'blackSapphire',
     text: 'SURPRIIIISE! A cake for our birthday star!! Go on, touch it! Just one little tap!',
     effect: 'cake', button: 'Light the candles!'
   },
