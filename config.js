@@ -53,7 +53,7 @@ const CHARACTERS = {
 };
 
 const OCS = {
-  tofu: { name: 'Tofu Cookie', image: 'assets/ocs/tofu.png' },
+  tofu: { name: 'Brunost Cookie', image: 'assets/ocs/tofu.png' },
   mold: { name: 'Mold Muffin', image: 'assets/ocs/mold-muffin.png' },
   // Add as many as you want: another: { name: 'Another OC', image: 'assets/ocs/another.png' }
 };
@@ -90,7 +90,7 @@ const SCENES = [
   {
     act: 'spire', speaker: 'candy', expression: 'excited', left: 'candy', right: 'blackSapphire',
     text: 'We found a few familiar faces waiting for you, too! Look! They’ve been keeping the secret all day!',
-    oc: 'tofu', button: 'Say hello to Tofu!'
+    oc: 'tofu', button: 'Say hello to Brunost!'
   },
   {
     act: 'spire', speaker: 'blackSapphire', expression: 'smile', left: 'blackSapphire',
